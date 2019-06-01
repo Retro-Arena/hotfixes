@@ -16,3 +16,6 @@ sudo mkimage -A arm -O linux -T ramdisk -C none -a 0 -e 0 -n uInitrd -d /boot/in
 sudo cp /boot/uInitrd-`make kernelrelease` /media/boot/uInitrd
 sync
 sudo sync
+cd ~
+rm -r odroidxu3-3.10.y
+
