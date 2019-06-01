@@ -17,5 +17,5 @@ sudo cp /boot/uInitrd-`make kernelrelease` /media/boot/uInitrd
 sync
 sudo sync
 cd ~
-rm -r odroidxu3-3.10.y
+sudo rm -r odroidxu3-3.10.y
 
