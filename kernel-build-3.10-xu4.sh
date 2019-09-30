@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 sudo apt update && sudo apt -y upgrade
-sudo apt -y install bc
+
+sudo apt install bc build-essential libqt4-dev libncurses5-dev git
 git clone --depth 1 https://github.com/Retro-Arena/linux.git -b odroidxu3-3.10.y odroidxu3-3.10.y
 cd odroidxu3-3.10.y
 make odroidxu3_defconfig
@@ -18,4 +19,5 @@ sync
 sudo sync
 cd ~
 sudo rm -r odroidxu3-3.10.y
+sudo reboot
 
